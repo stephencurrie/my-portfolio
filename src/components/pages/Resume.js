@@ -7,7 +7,7 @@ export default function Resume() {
       <section className="containerfluid" id="skills">
       <div className="row">
 
-    <div className="col-md-8 h3space"> 
+    <div className="col-md-6 h3space"> 
       <h3>Business Skills</h3>
       <ul>
         <li>
@@ -45,7 +45,7 @@ export default function Resume() {
     </div>
 
 
-    <div className="col-md-4 h3space">
+    <div className="col-md-6 h3space">
       <h3>Technical Skills</h3>
       <ul className="techskills">
         <li>HTML</li>
