@@ -6,3 +6,13 @@
 .ml-auto, .mx-auto {
     margin-left: auto!important;
 }
+
+footer {
+    text-align: center;
+    background-color: #A8D0E6;
+}
+
+.content {
+
+    background-color: #eceff2;
+}
