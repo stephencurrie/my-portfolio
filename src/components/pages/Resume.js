@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Resume() {
   return (
-    <div>
+    <div className="content">
       <h1>Resume</h1>
       <section className="containerfluid" id="skills">
       <div className="row">

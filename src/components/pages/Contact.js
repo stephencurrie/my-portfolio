@@ -78,7 +78,7 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div className="content">
       <h1>Contact Page</h1>
       <form className="form">
         Email

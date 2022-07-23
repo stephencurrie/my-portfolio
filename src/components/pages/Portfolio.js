@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="content">
       <h1>Portfolio</h1>
       <section className="containerfluid" id="applications">
         <div className="w3-bar w3-blue"></div>
