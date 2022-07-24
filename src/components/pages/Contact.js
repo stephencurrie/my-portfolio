@@ -1,29 +1,4 @@
-// import React from 'react';
-
-// export default function Contact() {
-//   return (
-//     <div>
-//       <h1>Contact Page</h1>
-//       <p>
-//         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-//         molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-//         magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-//         efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-//         mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-//         posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-//         faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-//         ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-//         dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-//         conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-//         rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-//       </p>
-//     </div>
-//   );
-// }
-
-
 import React, { useState } from 'react';
-// import './style.css';
 
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../../utils/helpers';
@@ -43,14 +18,23 @@ function Contact() {
     const inputValue = target.value;
 
     // Based on the input type, we set the state of either email, name, and message
-    if (inputType === 'email') {
-      setEmail(inputValue);
-    } else if (inputType === 'name') {
+    if (inputType === 'name') {
       setName(inputValue);
+    } else if (inputType === 'email') {
+      setEmail(inputValue);
     } else {
       setMessage(inputValue);
     }
   };
+
+//   if (inputType === 'email') {
+//     setEmail(inputValue);
+//   } else if (inputType === 'name') {
+//     setName(inputValue);
+//   } else {
+//     setMessage(inputValue);
+//   }
+// };
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -58,7 +42,7 @@ function Contact() {
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email) || !name) {
-      setErrorMessage('Email and/or name are required');
+      setErrorMessage('Email is not valid');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
@@ -73,39 +57,47 @@ function Contact() {
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');
-    setMessage('');
     setEmail('');
+    setMessage('');
+
   };
 
   return (
     <div className="content">
       <h1>Contact Page</h1>
-      <form className="form">
-        Email
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        Name
-        <input
+      <form>
+        <div className="form-group">
+      Name
+        <input className="form-control"
           value={name}
           name="name"
           onChange={handleInputChange}
           type="text"
-          placeholder="name"
+          // placeholder="name"
         />
+        </div>
+
+        <p></p>
+        Email
+        <input className="form-control"
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="email"
+          // placeholder="email"
+        />
+        <p></p>
         Message
-        <input
+        <textarea className="form-control"
+        rows="5"
           value={message}
           name="message"
           onChange={handleInputChange}
           type="message"
-          placeholder="message"
+          // placeholder="message"
         />
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
+        <p></p>
+        <button type="button" className="btn btn-primary" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
         <div>
