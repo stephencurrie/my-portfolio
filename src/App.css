@@ -3,8 +3,12 @@
     background-color: #1A2238;
 }
 
-.ml-auto, .mx-auto {
+/* .ml-auto, .mx-auto {
     margin-left: auto!important;
+} */
+
+.card-header {
+    background-color: #A8D0E6;
 }
 
 footer {
@@ -13,12 +17,26 @@ footer {
 
 }
 
-footer img{
+footer img {
 height: 30px;
 margin: 20px;
+}
+
+.navbar-brand {
+    margin-left: 20px;
 }
 
 .content {
 
     background-color: #eceff2;
+    padding: 20px;
 }
+
+
+.setwidth {
+    width: 100%;
+
+}
+/* .card-body {
+    justify-content: center;
+} */
