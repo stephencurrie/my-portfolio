@@ -1,9 +1,12 @@
 import React from 'react';
+import resume from '../../images/stephencurrie_resume_CIO.pdf';
 
 export default function Resume() {
   return (
     <div className="content">
       <h1>Resume</h1>
+      <p>Download my <a href={resume} target="_blank">resume</a>
+      </p>
       <section className="containerfluid" id="skills">
       <div className="row">
 
