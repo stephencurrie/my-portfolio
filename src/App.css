@@ -9,7 +9,13 @@
 
 footer {
     text-align: center;
-    background-color: #A8D0E6;
+    background-color: #eceff2;
+
+}
+
+footer img{
+height: 30px;
+margin: 20px;
 }
 
 .content {

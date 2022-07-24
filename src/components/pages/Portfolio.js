@@ -1,4 +1,11 @@
 import React from "react";
+import entertainmentFinder from '../../images/entertainmentfinder2.png';
+import weatherDash from '../../images/weather_screen2.png';
+import proritizer from '../../images/prioritizer_screen2.png';
+import dayPlanner from '../../images/workdayscreen.png';
+import textEditor from '../../images/JATE_screen.png';
+import techBlog from '../../images/techblogscreen.png';
+import github from '../../images/GitHub-Mark-64px.png';
 
 export default function Portfolio() {
   return (
@@ -23,10 +30,10 @@ export default function Portfolio() {
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/GitHub-Mark-64px.png"
+                    src={github}
                     className="spacer"
-                    height="24px"
-                  />
+                    height="24px"></img>
+
                 </a>
               </h5>
               <div className="card-body">
@@ -35,9 +42,9 @@ export default function Portfolio() {
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/entertainmentfinder2.png"
+                    src={entertainmentFinder}
                     alt="Entertainment Finder"
-                  />
+                  ></img>
                 </a>
               </div>
               <p className="small">(Click image to go to application)</p>
@@ -53,10 +60,9 @@ export default function Portfolio() {
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/GitHub-Mark-64px.png"
+                    src={github}
                     className="spacer"
-                    height="24px"
-                  />
+                    height="24px"></img>
                 </a>
               </h5>
               <div className="card-body">
@@ -65,9 +71,9 @@ export default function Portfolio() {
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/weather_screen2.png"
+                    src={weatherDash}
                     alt="Weather Dashboard"
-                  />
+                  ></img>
                 </a>
               </div>
               <p className="small">(Click image to go to application)</p>
@@ -83,10 +89,9 @@ export default function Portfolio() {
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/GitHub-Mark-64px.png"
+                    src={github}
                     className="spacer"
-                    height="24px"
-                  />
+                    height="24px"></img>
                 </a>
               </h5>
               <div className="card-body">
@@ -95,7 +100,7 @@ export default function Portfolio() {
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/prioritizer_screen2.png"
+                    src={proritizer}
                     alt="Prioritizer"
                   />
                 </a>
@@ -109,26 +114,25 @@ export default function Portfolio() {
           <div className="col-md-4">
             <div className="card">
               <h5 className="card-header">
-                Entertainment Finder
+                Day Planner
                 <a
-                  href="https://github.com/stephencurrie/entertainment-finder"
+                  href="https://github.com/stephencurrie/hw-5-day-planner"
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/GitHub-Mark-64px.png"
+                    src={github}
                     className="spacer"
-                    height="24px"
-                  />
+                    height="24px"></img>
                 </a>
               </h5>
               <div className="card-body">
                 <a
-                  href="https://stephencurrie.github.io/entertainment-finder/index.html"
+                  href="https://stephencurrie.github.io/hw-5-day-planner/"
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/entertainmentfinder2.png"
-                    alt="Entertainment Finder"
+                    src={dayPlanner}
+                    alt="Day Planner"
                   />
                 </a>
               </div>
@@ -139,27 +143,26 @@ export default function Portfolio() {
           <div className="col-md-4">
             <div className="card">
               <h5 className="card-header">
-                Weather Dashboard
+                Text Editor
                 <a
-                  href="https://github.com/stephencurrie/hw-6-weather-dashboard"
+                  href="https://github.com/stephencurrie/pwa-text-editor"
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/GitHub-Mark-64px.png"
+                    src={github}
                     className="spacer"
-                    height="24px"
-                  />
+                    height="24px"></img>
                 </a>
               </h5>
               <div className="card-body">
                 <a
-                  href="https://stephencurrie.github.io/hw-6-weather-dashboard/"
+                  href="https://classique-chaise-41102.herokuapp.com/"
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/weather_screen2.png"
-                    alt="Weather Dashboard"
-                  />
+                    src={textEditor}
+                    alt="Text Editor"
+                  ></img>
                 </a>
               </div>
               <p className="small">(Click image to go to application)</p>
@@ -169,26 +172,25 @@ export default function Portfolio() {
           <div className="col-md-4">
             <div className="card">
               <h5 className="card-header">
-                The Prioritizer
+                Tech Blog
                 <a
-                  href="https://github.com/mdschenck/Prioritizer"
+                  href="https://github.com/stephencurrie/tech-blog"
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/GitHub-Mark-64px.png"
+                    src={github}
                     className="spacer"
-                    height="24px"
-                  />
+                    height="24px"></img>
                 </a>
               </h5>
               <div className="card-body">
                 <a
-                  href="https://infinite-coast-94356.herokuapp.com/"
+                  href="https://fathomless-wave-42828.herokuapp.com/"
                   target="_blank"
                 >
                   <img
-                    src="./assets/images/prioritizer_screen2.png"
-                    alt="Prioritizer"
+                    src={techBlog}
+                    alt="Tech Blog"
                   />
                 </a>
               </div>
