@@ -27,14 +27,6 @@ function Contact() {
     }
   };
 
-//   if (inputType === 'email') {
-//     setEmail(inputValue);
-//   } else if (inputType === 'name') {
-//     setName(inputValue);
-//   } else {
-//     setMessage(inputValue);
-//   }
-// };
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -45,15 +37,11 @@ function Contact() {
       setErrorMessage('Email is not valid');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
+
+
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
-    // if (!checkMessage(message)) {
-    //   setErrorMessage(
-    //     `Choose a better name for the account: ${name}`
-    //   );
-    //   return;
-    // }
-    // alert(`Hello ${name}`);
+
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');

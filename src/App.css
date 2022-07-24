@@ -7,9 +7,10 @@
     margin-left: auto!important;
 } */
 
-.card-header {
-    background-color: #A8D0E6;
+body .card-header {
+    background-color: #c6e3eb;
 }
+
 
 footer {
     text-align: center;
