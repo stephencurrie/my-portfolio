@@ -1,3 +1,4 @@
+//import from react
 import React from 'react';
 import headShot from '../../images/SC_Synoptek4.png';
 
