@@ -4,7 +4,7 @@
 
 This page is a web portfolio for Stephen Currie that is built using React.  The look and feel and content of this page will get updated periodically as new applications get built and/or when the page can be improved visually.
 
-Currently, I am working on getting the page to render successfully in github.
+The app is running on a different github pages repo as I had to set up a new repo to get it to deploy to github pages.  But the source code is exactly the same.
 
 Stephen can be reached directly at scurrie@gmail.com
 
@@ -22,7 +22,7 @@ Below is a screen shot of the web application:
 
 ![Portfolio Screenshot](./src/images/portfolioscreen.png)
 
-The page is live on [GitHub Pages](https://stephencurrie.github.io/my-portfolio/)
+The page is live on [GitHub Pages](https://stephencurrie.github.io/my-new-portfolio/)
 
 The code is in the [GitHub Repository](https://github.com/stephencurrie/my-portfolio)
 
@@ -38,7 +38,6 @@ The following are things accomplished by this portfolio site:
 - [x] When I am presented with the About Me section, I see a recent photo or avatar of the developer and a short bio about them
 - [x] When I am presented with the Portfolio section, I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
 - [x] When I am presented with the Contact section, I see a contact form with fields for a name, an email address, and a message
-- [x] When I move my cursor out of one of the form fields without entering text, I receive a notification that this field is required
 - [x] When I enter text into the email address field, I receive a notification if I have entered an invalid email address
 - [x] When I am presented with the Resume section, I see a link to a downloadable resume and a list of the developer’s proficiencies
 - [x] When I view the footer, I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
